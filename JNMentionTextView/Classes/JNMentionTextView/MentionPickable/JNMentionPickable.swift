@@ -19,4 +19,16 @@ public protocol JNMentionPickable {
      - Returns: The pickable Identifier string.
      */
     func getPickableIdentifier() -> String
+    
+    /**
+     Get Meeting Identifier
+     - Returns: The pickable Identifier string.
+     */
+    func getMeetingID() -> String
+    
+    /**
+     Get Item Type
+     - Returns: The pickable Type string.
+     */
+    func getType() -> String
 }
