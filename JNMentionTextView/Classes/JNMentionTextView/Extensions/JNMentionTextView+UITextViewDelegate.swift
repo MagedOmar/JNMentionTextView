@@ -195,7 +195,7 @@ extension JNMentionTextView: UITextViewDelegate {
         self.mentionDelegate?.textViewDidBeginEditing?(textView)
         
         // Update placeholder label visibility
-        self.showPlaceholder(textView.text.isEmpty)
+        self.showPlaceholder(false)
     }
     
     /**
