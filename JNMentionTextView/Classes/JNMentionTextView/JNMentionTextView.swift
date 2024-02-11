@@ -324,6 +324,12 @@ public class JNMentionTextView: UITextView {
      Retrieve Data
      - Returns: Pickable data array.
      */
+
+    public func reloadData(data: [JNMentionPickable]) {
+        self.pickerViewController?.dataList = data
+        self.pickerViewController?.reloadData()
+      }
+    
     func pickerViewRetrieveData() {
         
         // Show Loading Indicator View
@@ -339,7 +345,7 @@ public class JNMentionTextView: UITextView {
             strongSelf.pickerViewController?.dataList = results
 
             if results.isEmpty {
-                strongSelf.endMentionProcess()
+               // strongSelf.endMentionProcess()
             }
             
             // Reload Data
